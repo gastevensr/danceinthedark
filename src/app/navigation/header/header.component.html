@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <a routerLink="/"><img src="assets/thunder-01.png" width="48px" style="padding-top: 10px;"></a>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <div>
+            <a routerLink="/news"><mat-icon>new_releases</mat-icon><span class="nav-caption">News</span></a>
+        </div>
+        <div class="header-option">
+            <a routerLink="/links"><mat-icon>link</mat-icon><span class="nav-caption">Links</span></a>
+        </div>
+        <div class="header-option">
+            <a routerLink="/about"><mat-icon>help</mat-icon><span class="nav-caption">About</span></a>
+        </div>
+    </div>
+</mat-toolbar>

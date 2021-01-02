@@ -1,0 +1,14 @@
+<mat-nav-list>
+    <a mat-list-item routerLink="/" (click)="onSidenavClose()">
+        <img src="assets/thunder-01.png" width="48px">
+    </a>
+    <a mat-list-item routerLink="/news" (click)="onSidenavClose()">
+        <mat-icon>new_releases</mat-icon><span class="nav-caption">News</span>
+    </a>
+    <a mat-list-item routerLink="/links" (click)="onSidenavClose()">
+        <mat-icon>link</mat-icon><span class="nav-caption">Links</span>
+    </a>
+    <a mat-list-item routerLink="/about" (click)="onSidenavClose()">
+        <mat-icon>help</mat-icon><span class="nav-caption">About</span>
+    </a>
+</mat-nav-list>
