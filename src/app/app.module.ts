@@ -17,6 +17,7 @@ import { AboutComponent } from './about/about.component';
 import { TermsCondsComponent } from './terms-conds/terms-conds.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LinksComponent } from './links/links.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { LinksComponent } from './links/links.component';
     MaterialModule,
     RoutingModule,
     FlexLayoutModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
