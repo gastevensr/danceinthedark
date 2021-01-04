@@ -6,6 +6,7 @@ import { AboutComponent } from '../about/about.component';
 import { NewsComponent } from '../news/news.component';
 import { TermsCondsComponent } from '../terms-conds/terms-conds.component';
 import { LinksComponent } from '../links/links.component';
+import { GalleryComponent } from '../gallery/gallery.component';
 
 const routes: Routes = [
   //{ path: 'home', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
 
   { path: '', component: HomeComponent },
   { path: 'news', component: NewsComponent },
+  { path: 'gallery', component: GalleryComponent },
   { path: 'links', component: LinksComponent },
   { path: 'about', component: AboutComponent },
   { path: 'termsandconditions', component: TermsCondsComponent }

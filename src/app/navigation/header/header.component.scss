@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    z-index: 1030;
+    z-index: 5;
     height:57px;
     color:#aaa;
     background-color:#222;
@@ -48,7 +48,7 @@ mat-toolbar{
 .menubar {
     background-color: #6a61ad;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     top: 0;
     left: 0;
     right: 0;

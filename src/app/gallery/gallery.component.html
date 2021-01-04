@@ -1,0 +1,24 @@
+<section fxLayout="column" fxFlexAlign="stretch">
+    <!-- <div fxFlexAlign="center">
+        <p>Welcome to the Gallery</p>
+    </div> -->
+
+    <h2>Here I show a few photos of the three <span class="lg">Lady Gaga's</span> concerts that I've been to:</h2>
+
+    <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
+        <mat-tab *ngFor="let tab of data" [label]="tab.title ? tab.title : ''">
+            <ngb-carousel>
+                <ng-template *ngFor="let p of tab.pictures" ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img src="{{ p.src }}" alt="{{ p.alt }}" class="responsive">
+                    </div>
+                    <div class="carousel-caption caption">
+                        <h3>{{ tab.venue }}</h3>
+                        <p>{{ tab.date }}</p>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </mat-tab>
+        <mat-tab label="More coming soon!"></mat-tab>
+    </mat-tab-group>
+</section>

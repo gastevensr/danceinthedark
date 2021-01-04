@@ -18,6 +18,7 @@ import { TermsCondsComponent } from './terms-conds/terms-conds.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LinksComponent } from './links/links.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     NewsComponent,
     AboutComponent,
     TermsCondsComponent,
-    LinksComponent
+    LinksComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
